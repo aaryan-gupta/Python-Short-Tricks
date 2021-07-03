@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Email Sender</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+</head>
+
+<body>
+	<form action="/result" class="container mt-5" method="POST">
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Sender's Email address (GMAIL)</label>
+			<input type="email" name="sender" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+				placeholder="Email Address" />
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Sender's Password (GMAIL)</label>
+			<input name="password" type="password" class="form-control" id="exampleInputPassword1"
+				placeholder="Password" />
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword" class="form-label">Reciever's Email Address</label>
+			<input name="reciever" type="text" class="form-control" id="exampleInputPassword1"
+				placeholder="Email Address" />
+		</div>
+		<label for="exampleInputPassword1" class="form-label">Message</label>
+		<div class="form-floating">
+			<textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2"
+				style="height: 200px"></textarea>
+			<label for="floatingTextarea2">Comments</label>
+		</div>
+		<button type="submit" class="btn btn-primary mt-5">Send Mail</button>
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
