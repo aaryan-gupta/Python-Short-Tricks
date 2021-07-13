@@ -1,4 +1,4 @@
-from forex_python.converter import CurrencyRates
+from forex_python.converter import CurrencyRates # pip install forex-python
 c = CurrencyRates()
 amount = int(input("Enter the Amount you want to Convert: "))
 fromCurrency = input("From: ").upper()
